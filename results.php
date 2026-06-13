@@ -64,5 +64,10 @@
         <p><strong>Status:</strong> <span class="<?php echo $statusClass; ?>"><?php echo $status; ?></span></p>
 
     </section>
+
+    <footer>
+        <p>Computer Science Department</p>
+        <p>&copy; 2026 Student Grade Calculator</p>
+    </footer>
 </body>
 </html>
