@@ -50,6 +50,8 @@
         } else {
             $status = 'Pass';
         }
+
+        $statusClass = ($status == 'Pass') ? 'status-pass' : 'status-fail';
     ?>
 
     <section id="results">
