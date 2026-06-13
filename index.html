@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Grade Calculator</h1>
+        <p>Enter student details below:</p>
+    </header>
+    <section id="form">
+        <form action="results.php" method="post">
+            <fieldset>
+                <legend>Student General Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter student first name" required><br>
+
+                <label for="lname">Last Name: </label>
+                <input type="text" name="lname" id="lname" placeholder="Enter student last name" required><br>
+
+                <label for="regNo">Registration No:</label>
+                <input type="text" name="regNo" id="regNo" placeholder="Enter registration number" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course details</legend>
+                <section id="data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Unit Code</th>
+                                <th>Unit Name</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS101</td>
+                                <td>Programming Fundamentals</td>
+                                <td><input type="number" name="score1" id="score1" min="0" max="100" required></td>
+                            </tr>
+                            <tr>
+                                <td>CS102</td>
+                                <td>Data Structures</td>
+                                <td><input type="number" name="score2" id="score2" min="0" max="100" required></td>
+                            </tr>
+                            <tr>
+                                <td>CS103</td>
+                                <td>Computer Networks</td>
+                                <td><input type="number" name="score3" id="score3" min="0" max="100" required></td>
+                            </tr>
+                            <tr>
+                                <td>CS104</td>
+                                <td>Database Management</td>
+                                <td><input type="number" name="score4" id="score4" min="0" max="100" required></td>
+                            </tr>
+                            <tr>
+                                <td>CS105</td>
+                                <td>Software Engineering</td>
+                                <td><input type="number" name="score5" id="score5" min="0" max="100" required></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Computer Science Department</p>
+        <p>&copy; 2026 Student Grade Calculator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
