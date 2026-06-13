@@ -107,3 +107,18 @@ header p {
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+}
