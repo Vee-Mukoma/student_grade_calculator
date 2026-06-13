@@ -2,6 +2,10 @@
 
 A student grade calculator built with HTML, CSS, JavaScript and PHP.
 
+## Live Demo
+
+[View Live Site](https://vee-mukoma.ifree.page/grade-calculator/index.php)
+
 ## Description
 
 A web application that calculates student grades based on scores entered for five Computer Science units. The application reads the submitted form data using PHP, calculates the total, average and grade, then displays the results on a separate page with a clear pass or fail status.
