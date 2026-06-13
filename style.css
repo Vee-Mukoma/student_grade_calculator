@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg:       #f0f4f8;
+    --white:    #ffffff;
+    --blue:     #1a73e8;
+    --dark-blue:#1557b0;
+    --dark:     #2d2d2d;
+    --muted:    #666666;
+    --border:   #d0dce8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+header p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+/* FORM SECTION */
+#form {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 1.5rem 3rem;
+}
+
+/* FIELDSET */
+fieldset {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LEGEND */
+legend {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    padding: 0 0.5rem;
+}
+
+/* LABELS */
+label {
+    display: block;
+    color: var(--dark);
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    margin-top: 1.2rem;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+/* INPUTS */
+input[type="text"] {
+    width: 100%;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(26,115,232,0.15);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+thead {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+thead th {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #e8f0fc;
+}
+
+tbody td {
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+/* NUMBER INPUT INSIDE TABLE */
+input[type="number"] {
+    width: 100%;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(26,115,232,0.15);
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    padding: 0.85rem 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+}
