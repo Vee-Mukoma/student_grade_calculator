@@ -61,7 +61,7 @@
         <p><strong>Total Score:</strong> <?php echo $total; ?></p>
         <p><strong>Average Score:</strong> <?php echo number_format($average, 2); ?></p>
         <p><strong>Grade:</strong> <?php echo $grade; ?></p>
-        <p><strong>Status:</strong> <?php echo $status; ?></p>
+        <p><strong>Status:</strong> <span class="<?php echo $statusClass; ?>"><?php echo $status; ?></span></p>
 
     </section>
 </body>

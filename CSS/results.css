@@ -87,11 +87,23 @@ header p {
 
 /* STATUS COLORS */
 .status-pass {
-    color: #2e7d32;
+    background-color: #2e7d32;
+    color: #ffffff;
     font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .status-fail {
-    color: #c62828;
+    background-color: #c62828;
+    color: #ffffff;
     font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
